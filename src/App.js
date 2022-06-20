@@ -1,10 +1,8 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import PriceCard from './PriceCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCheck, faTimes} from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
@@ -127,15 +125,13 @@ function App() {
   return (
     <>
     <section className="pricing py-5">
-       <div className="container">
+      <div className="container">
        <div className="row">
-         {
-          priceCard.map((card)=> {
+         {priceCard.map((card)=> {
             return <PriceCard data={card}></PriceCard>
-          })
-         }
+          })}
        </div>
-       </div>
+      </div>
     </section>
     </>
   );
