@@ -34,7 +34,6 @@ function PriceCard({ data }){ //Object destructuring concept
         </div>
         </div>
       </div>
-        
       </>
     );
 }
